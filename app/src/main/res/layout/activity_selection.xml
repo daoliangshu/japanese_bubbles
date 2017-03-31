@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1.0">
+    <!-- Display logo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:background="@color/darkdarkdarkBlue"
+        android:layout_weight="0.1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:background="@drawable/border"
+            android:src="@drawable/librefra_logo_big"
+            android:contentDescription="cat" />
+    </LinearLayout>
+
+    <!-- Display Options for sorting the activities -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:text="@string/choose_search_way"
+                android:background="@color/darkdarkdarkBlue"
+                android:textColor="@color/lightBlue"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:background="@color/darkdarkdarkBlue"
+                android:foreground="@color/lightGrey"
+                android:id="@+id/act_choose_sort_spinner"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:background="@color/darkdarkdarkBlue"
+                android:textColor="@color/lightBlue"
+                android:layout_height="match_parent"
+                android:text="@string/choose_sub_search_way"
+                android:layout_weight="0.5" />
+
+            <Spinner
+                android:background="@color/darkdarkdarkBlue"
+                android:layout_width="0dp"
+                android:id="@+id/act_choose_sub_sort_spinner"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Spinner>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.64"
+        android:weightSum="1.0"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darkdarkdarkBlue"
+            android:id="@+id/acti_selection_scrolview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/scrollInnerLayout"></LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:textSize="20sp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:text="@string/chooseActivity"
+        android:background="@color/darkdarkdarkBlue"
+        android:textColor="@color/lightGrey" />
+
+</LinearLayout>

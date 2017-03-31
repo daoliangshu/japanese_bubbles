@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/selectMenuLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="top"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="0"
+    android:columnCount="3"
+    android:rowCount="5">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:text="@string/menu_vocabulary"
+                android:id="@+id/btnVoc"
+                android:background="@drawable/button_floral_yellow" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:text="@string/menu_dictionary"
+                android:id="@+id/btnDictionary"
+                android:background="@drawable/button_floral_yellow" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:text="@string/menu_conjugaison"
+                android:background="@drawable/button_floral_yellow"
+                android:id="@+id/btnConj" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:text="@string/menu_reader"
+                android:background="@drawable/button_floral_yellow"
+                android:id="@+id/btnReader" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.05"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="0.30"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_floral_yellow"
+                android:text="@string/menu_multiplechoices"
+                android:id="@+id/btn_multiple_choices" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="0.275"
+                android:background="@drawable/button_floral_yellow"
+                android:layout_height="0dp"
+                android:text="課程\nCours"
+                android:id="@+id/btnLesson" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="0.25"
+                android:layout_height="0dp"
+                android:text="@string/menu_settings"
+                android:background="@drawable/button_floral_yellow"
+                android:id="@+id/btnSettings" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="0.175"
+                android:layout_height="0dp"
+                android:text="@string/menu_quit"
+                android:background="@drawable/button_floral_yellow"
+                android:id="@+id/btnQuit" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+

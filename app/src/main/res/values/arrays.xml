@@ -1,0 +1,40 @@
+<resources>
+    <string-array name="selections_en">
+        <item>Vocabulary</item>
+        <item>Grammar</item>
+        <item>About</item>
+        <item>Dump1</item>
+        <item>Dump2</item>
+        <item>Dump3</item>
+        <item>Dump4</item>
+        <item>Dump5</item>
+        <item>Dump6</item>
+        <item>Dump7</item>
+        <item>Dump8</item>
+        <item>Dump9</item>
+    </string-array>
+
+    <string-array name="lesson_search_way">
+        <!-- List the way how to display lessons
+            Can display by choosing a category, or list alll lessons.
+            Used when selecting a lesson
+        -->
+        <item>Tout/所有</item>
+        <item>Niveau/程度</item>
+        <item>Catégorie/類別</item>
+    </string-array>
+
+    <string-array name="lesson_menu_items_zh_fr">
+        <item style="@style/menu_style_1">聽全部 écouter tout </item>
+        <item>顯示/隱瞞聽單子按鈕</item>
+        <item>顯示/隱瞞課文翻譯</item>
+        <item>多選題</item>
+        <item>練習單子</item>
+        <item>離開</item>
+    </string-array>
+    <string-array name="level_list">
+        <item>初級</item>
+        <item>中級</item>
+        <item>高級</item>
+    </string-array>
+</resources>

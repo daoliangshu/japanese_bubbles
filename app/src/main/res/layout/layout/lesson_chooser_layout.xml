@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Layout for choosing a lesson ( Top frame) -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.2"
+        android:background="@color/darkdarkdarkBlue"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:background="@color/darkdarkdarkBlue"
+            android:src="@drawable/librefra_logo_big" />
+    </LinearLayout>
+
+    <!-- Chooser choosing lesson mean : by level, category.. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:weightSum="1">
+
+        <!-- First level : choose how to choose lesson -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lesson_chooser_way"
+                android:id="@+id/lb_searchWay"
+                android:contentDescription="選擇選課方法"
+                android:background="@color/darkdarkdarkBlue"
+                android:textColor="@color/lightBlue"
+                android:enabled="true"
+                android:labelFor="@string/lb_lesson_search_way" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:id="@+id/spin_lessonSearch"
+                android:background="@color/darkdarkdarkBlue"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+
+        <!-- Second level: choose second way for choosing lesson-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textColor="@color/lightYellow"
+                android:text="@string/lesson_chooser_way2"
+                android:id="@+id/textView3"
+                android:background="@color/darkdarkBlue" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:id="@+id/spin_lessonSearch2"
+                android:background="@color/darkdarkdarkBlue"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Display lessons available-->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/listView"
+        android:background="@drawable/fond_sombre2_sombre"
+        android:layout_weight="0.6" />
+
+</LinearLayout>

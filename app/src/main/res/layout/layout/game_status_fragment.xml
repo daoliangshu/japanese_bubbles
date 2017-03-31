@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:background="@drawable/mur1">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_gravity="fill_vertical|fill_horizontal"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:id="@+id/bulle_word_to_guess"
+            android:scrollbars="vertical"
+            android:textColor="@color/lightPink"
+            android:gravity="center"
+            android:textSize="23sp" />
+        <!-- Component displaying the translation of the current word -->
+        <TextView
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:id="@+id/bulle_trans_of_word"
+            android:textColor="@color/lightPurple"
+            android:scrollbars="vertical"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_gravity="fill_vertical|fill_horizontal"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:id="@+id/bulle_time"
+            android:textColor="@color/lightGrey"
+            android:textSize="23sp" />
+        <!-- Component displaying the score -->
+        <TextView
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:text="0"
+            android:id="@+id/bulle_score"
+            android:textColor="@color/lightYellow"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

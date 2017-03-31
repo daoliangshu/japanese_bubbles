@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    style="@style/Theme.AppCompat.Dialog.MinWidth">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="1.0"
+        android:layout_weight="0.2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:layout_height="0dp"
+            android:layout_weight="0.6">
+
+            <EditText
+                android:layout_width="0dp"
+                android:id="@+id/edit_dicSearchEntry"
+                android:layout_weight="0.7"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:text="test test test"
+                android:maxLines="1"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:elegantTextHeight="true" />
+
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/btn_dicSearch"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="Search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:text="@string/noun"
+                android:id="@+id/check_noun"
+                android:checked="true"
+                android:textColor="#f29797"
+                android:visibility="visible"
+                android:enabled="true"
+                style="@style/Base.V22.Theme.AppCompat.Light" />
+
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:text="@string/verb"
+                android:id="@+id/check_verb"
+                android:textColor="#f99898"
+                android:visibility="visible"
+                android:enabled="true" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:text="@string/other"
+                android:id="@+id/check_other"
+                android:textColor="#f9a3a3"
+                android:foreground="#f6abab"
+                android:visibility="visible"
+                android:enabled="true"
+                android:elevation="@dimen/abc_action_bar_content_inset_material"
+                android:clickable="true"
+                android:buttonTint="#f6e7ab" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1.0"
+        android:layout_weight="0.8">
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/dic_result_scrollview"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </LinearLayout>
+</LinearLayout>

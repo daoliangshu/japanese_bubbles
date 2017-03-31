@@ -1,0 +1,35 @@
+<resources>
+    <string-array name="selections_en">
+        <item>Vocabulary</item>
+        <item>Grammar</item>
+        <item>About</item>
+        <item>Dump1</item>
+        <item>Dump2</item>
+        <item>Dump3</item>
+        <item>Dump4</item>
+        <item>Dump5</item>
+        <item>Dump6</item>
+        <item>Dump7</item>
+        <item>Dump8</item>
+        <item>Dump9</item>
+    </string-array>
+
+    <string-array name="lesson_search_way">
+        <!-- List the way how to display lessons
+            Can display by choosing a category, or list alll lessons.
+            Used when selecting a lesson
+        -->
+        <item>所有的</item>
+        <item>選類別</item>
+    </string-array>
+
+    <string-array name="lesson_menu_items_zh_fr">
+        <item style="@style/menu_style_1">聽全部</item>
+        <item>聽選單</item>
+        <item>看文章翻譯</item>
+        <item>單字練習</item>
+        <item>文法練習</item>
+        <item>翻譯練習</item>
+        <item>離開</item>
+    </string-array>
+</resources>

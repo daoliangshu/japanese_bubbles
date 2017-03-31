@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="#FFFF55">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <!--detail> Header panel containing information about selected word </detail-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.3"
+            android:weightSum="1">
+            <!-- Top header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:weightSum="1"
+                android:orientation="horizontal">
+                <!-- Display selected word -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lesson_head1"
+                    android:gravity="center"
+                    android:background="#000000"
+                    android:textColor="#FF0000"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+            <!--detail> Translations Here</detail-->
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.60"
+                android:id="@+id/lesson_info_flipper_view">
+
+                <!--  Scroll displaying informations of searched words -->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/fond_sombre2"
+                    android:id="@+id/lesson_info_scrollview" />
+
+                <!-- Explanation panel -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/fond_sombre2"
+                        android:textColor="@color/lightRed"
+                        android:id="@+id/lesson_explanation_text" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:layout_gravity="center">
+
+                        <!-- Button for getting back from explanation panel -->
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@android:drawable/ic_menu_directions"
+                            android:id="@+id/lesson_back_from_expl" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ViewFlipper>
+
+
+            <!--detail> information about selected word [temporary] </detail-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:background="@drawable/border"
+                android:id="@+id/lesson_content2" />
+
+
+        </LinearLayout>
+
+        <!--detail> Main lesson scroll </detail-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:id="@+id/main_screen"
+            android:orientation="vertical"
+            android:background="#000000"
+            android:weightSum="1.0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.6"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/lesson_main_part"
+                android:layout_marginLeft="0dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lesson_scroll"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/fond_sombre2_sombre"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.9"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lesson_view"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/fond_sombre2_sombre"
+                            android:textSize="23sp"
+                            android:scrollbars="vertical"
+                            android:onClick="onClick"
+                            android:clickable="true"
+                            android:enabled="true" />
+
+                        <LinearLayout
+                            android:id="@+id/lesson_explanation_side"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:background="#000000"></LinearLayout>
+                    </LinearLayout>
+
+
+                </ScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hidden_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:foreground="#000000"
+                android:gravity="bottom"
+                android:visibility="visible"
+                android:weightSum="1.0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/lesson_trans_part"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/lesson_trans_part">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:visibility="visible"
+                        android:id="@+id/lesson_trans_scroll"
+                        android:background="@drawable/fond_sombre1_sombre"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightRed"
+                            android:id="@+id/tvFullTranslation"></TextView>
+                    </ScrollView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.1"
+                android:layout_gravity="center"
+                android:gravity="bottom|center_horizontal"
+                android:minHeight="70dp"
+                android:id="@+id/tb_speakers">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/mur1">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingBottom="-2dp"
+                    android:paddingTop="-2dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:background="@drawable/button_black_yellow"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/lightPurple"
+                        android:text="@string/btnSpeakWord"
+                        android:id="@+id/speakBtn" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/button_black_yellow"
+                        android:layout_toRightOf="@id/speakBtn"
+                        android:gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/lightPurple"
+                        android:id="@+id/speakBtn2"
+                        android:text="@string/btnSpeakAll" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!-- Sliding menu -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lesson_menu"
+        android:layout_gravity="start"
+        android:background="#000055"
+        android:textSize="34sp"
+        android:textColor="#88FFFF"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"></ListView>
+
+
+</android.support.v4.widget.DrawerLayout>

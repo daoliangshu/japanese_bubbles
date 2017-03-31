@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:id="@+id/act_choose_top_layout">
+
+        <TextView
+
+            android:textColor="@color/middleLightRed"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbTitleFr"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightPink"
+            android:id="@+id/tvTitleFr"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="1.0"
+        android:layout_below="@id/act_choose_top_layout"
+        android:id="@+id/act_choose_top_layout2">
+
+        <TextView
+            android:textColor="@color/lightGreen"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbTitleZh"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightPink"
+            android:id="@+id/tvTitleZh"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/act_choose_top_layout2"
+        android:id="@+id/act_choose_top_layout3"
+        android:weightSum="1.0">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/lightGrey"
+            android:id="@+id/lbActivityType"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="left"
+            android:layout_marginLeft="23dp"
+            android:orientation="horizontal"
+            android:textColor="@color/lightYellow"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvActivityType"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/lightGrey"
+            android:id="@+id/lbWaveCount"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="left"
+            android:layout_marginLeft="23dp"
+            android:orientation="horizontal"
+            android:textColor="@color/lightYellow"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvWaveCount"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/lightGrey"
+            android:id="@+id/tvThematic"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="left"
+            android:layout_marginLeft="23dp"
+            android:orientation="horizontal"
+            android:textColor="@color/lightYellow"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLevel"></TextView>
+    </LinearLayout>
+
+</merge>

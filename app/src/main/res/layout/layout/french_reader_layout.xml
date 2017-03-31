@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!--detail> Header panel containing information about selected word </detail-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.25"
+        android:weightSum="1">
+        <!-- Top header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:background="@color/darkdarkdarkBlue"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <!-- Display selected word -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/reader_word"
+                android:gravity="center"
+                android:background="#000000"
+                android:textColor="@color/lightGreen"
+                android:shadowColor="@color/lightCoral"
+                android:textSize="25sp"
+                android:scrollbars="vertical" />
+
+
+            <!-- Display selected word translations -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textColor="#00AAFF"
+                android:id="@+id/reader_trans"
+                android:gravity="center"
+                android:background="@color/darkdarkdarkBlue"
+                android:textSize="24sp"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:id="@+id/reader_open_file_button"
+                android:background="@android:drawable/ic_input_get" />
+        </LinearLayout>
+
+        <!--detail> information about selected word [temporary] </detail-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/fond_sombre2"
+            android:id="@+id/lesson_info_scrollview" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:id="@+id/main_screen"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/darkdarkdarkBlue"
+            android:orientation="horizontal"
+            android:layout_marginLeft="0dp">
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/reader_scroll"
+                android:layout_weight="0.78"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reader_view"
+                    android:text="hudada"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:scrollbars="vertical"
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:enabled="true" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/darkdarkdarkBlue"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="0.1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.333"
+            android:background="@drawable/button_floral_yellow"
+            android:textSize="12sp"
+            android:text="@string/previous"
+            android:id="@+id/btn_previousPage" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.333"
+            android:background="@drawable/button_floral_yellow"
+            android:textSize="12sp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/btn_pageDisplay" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.333"
+            android:textSize="12sp"
+            android:background="@drawable/button_floral_yellow"
+            android:layout_height="match_parent"
+            android:text="@string/next"
+            android:id="@+id/btn_nextPage" />
+
+    </LinearLayout>
+</LinearLayout>

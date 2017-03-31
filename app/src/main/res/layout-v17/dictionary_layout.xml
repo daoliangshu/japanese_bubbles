@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <!-- Word search panel -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+
+        <!-- Input word to search -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <EditText
+                android:id="@+id/edit_dicSearchEntry"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:elegantTextHeight="true"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dicSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:text="@string/search"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:background="@drawable/button_floral_yellow" />
+        </LinearLayout>
+
+        <!-- Choose which kind of words to search ( in which table to search) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <CheckBox
+                android:id="@+id/check_noun"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:button="@drawable/custom_checkbox_display"
+                android:checked="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/noun"
+                android:textColor="#f29797"
+                android:visibility="visible" />
+
+
+            <CheckBox
+                android:id="@+id/check_verb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:button="@drawable/custom_checkbox_display"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/verb"
+                android:textColor="#f99898"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/check_other"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:button="@drawable/custom_checkbox_display"
+                android:clickable="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/other"
+                android:textColor="#f9a3a3"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Main frame where are displayed dictionary entries -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+
+        <ScrollView
+            android:id="@+id/dic_result_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

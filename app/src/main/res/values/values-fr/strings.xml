@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LibreFra</string>
+    <string name="lb_lesson_chooser_main">Select a lesson</string>
+    <string name="lb_lesson_search_way">Search by:</string>
+    <string name="btn_begin">C\'est parti!</string>
+    <string name="next">下 Suivant </string>
+    <string name="previous">上 Précédent </string>
+    <string name="verb">verbes</string>
+    <string name="noun">noms</string>
+    <string name="other">autres</string>
+
+    <string name="present">Présent</string>
+    <string name="imparfait">Imparfait</string>
+    <string name="simple_past">Passé Simple</string>
+    <string name="futur">Futur</string>
+    <string name="more_than_perfect">Plus-que-parfait</string>
+    <string name="subjonctive">Subjonctif</string>
+    <string name="subjontive_imparfait">Subjontif Imparfait</string>
+    <string name="subjontive_present">Subjontif Présent</string>
+    <string name="imperative">Impératif</string>
+
+    <string name="menu_vocabulary">單子練習 Vocabulaire</string>
+    <string name="menu_conjugaison">動詞變化 Conjugaison</string>
+    <string name="menu_dictionary">小字典 Petit Dictionaire</string>
+    <string name="menu_reader">讀器 Assistant de Lecture</string>
+</resources>

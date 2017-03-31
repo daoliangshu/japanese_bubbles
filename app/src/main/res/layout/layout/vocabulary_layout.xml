@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/vocab_view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- First view: Vocabulary practice -->
+        <LinearLayout
+            android:id="@+id/vocab_practice_part"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/mur1"
+                android:paddingTop="5dp"
+                android:layout_weight="0.15"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_goto1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@android:drawable/stat_notify_more"
+                    android:textSize="0.25in" />
+
+                <Button
+                    android:id="@+id/btn_goto2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@android:drawable/btn_plus"
+                    android:textSize="0.25in" />
+
+                <Button
+                    android:id="@+id/btn_goto3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@android:drawable/ic_menu_set_as"
+                    android:textSize="0.25in" />
+
+            </LinearLayout>
+
+            <!-- Word FR display -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/fond_sombre2_sombre"
+                    android:layout_weight="0.15"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnSrcOpt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35" />
+
+                    <Button
+                        android:id="@+id/btnSrcOpt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+
+                        android:layout_weight="0.3"
+                        android:background="@android:drawable/ic_btn_speak_now"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/btnSrcOpt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textvDst"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/fond_sombre2_sombre"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="法文單字"
+                    android:textColor="@color/lightGreen"
+                    android:textSize="34sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.15"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnSrcOpt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35" />
+
+                    <Button
+                        android:id="@+id/btnSpeak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+
+                        android:layout_weight="0.3"
+                        android:background="@android:drawable/ic_btn_speak_now"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/btnSrcOpt6"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- Word Zh display -->
+            <TextView
+                android:id="@+id/textvSrc1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:textColor="@color/lightBlue"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="中文翻譯"
+                android:textSize="34sp" />
+
+            <!-- Display other information about the word -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:weightSum="1.0"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/mur1">
+
+                <TextView
+                    android:id="@+id/vocab_sentence_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/lightPurple"
+                    android:textSize="21sp" />
+
+                <Button
+                    android:id="@+id/vocab_search_sentence_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.2"
+                    android:layout_margin="5dp"
+                    android:background="@android:drawable/btn_plus" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15">
+
+
+                <Button
+                    android:id="@+id/btnPrev"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/button_floral_yellow"
+                    android:text="@string/previous"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/button_floral_yellow"
+                    android:text="@string/next"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnCheck"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/button_floral_yellow"
+                    android:text="@string/random" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Second view: Vocabulary LIst Chooser -->
+        <LinearLayout
+            android:id="@+id/vocab_chooser_part"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <!-- Choose how to sort the items-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="0.15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:gravity="center"
+                        android:text="@string/choose_search_way"
+                        android:background="@color/darkdarkdarkBlue"
+                        android:textColor="@color/lightBlue"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:background="@color/darkdarkdarkBlue"
+                        android:foreground="@color/lightGrey"
+                        android:id="@+id/voc_choose_sort_spinner"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+                <!-- Chooser a kind of items to be display, according to how the items
+                    are searched -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:gravity="center"
+                        android:background="@color/darkdarkdarkBlue"
+                        android:textColor="@color/lightBlue"
+                        android:layout_height="match_parent"
+                        android:text="@string/choose_sub_search_way"
+                        android:layout_weight="0.5" />
+
+                    <Spinner
+                        android:background="@color/darkdarkdarkBlue"
+                        android:foreground="@color/lightGrey"
+                        android:layout_width="0dp"
+                        android:id="@+id/voc_choose_sub_sort_spinner"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/vocab_list_chooser"
+                    android:textColor="@color/lightGreen"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/vocab_chooser_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75">
+                <!-- Body is dinamically filled -->
+            </ScrollView>
+        </LinearLayout>
+
+
+    </ViewFlipper>
+</LinearLayout>

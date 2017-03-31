@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_light1"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvWord"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="0.4"
+                android:textColor="@color/lightGreen" />
+
+            <TextView
+                android:id="@+id/tvGenre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/lightPink" />
+
+            <TextView
+                android:id="@+id/tvPhonetic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:textColor="@color/lightPink" />
+            <!-- Button used for verb for displaying conjugaison -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hidden_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@android:drawable/ic_menu_zoom"
+                    android:layout_margin="2dp"
+                    android:padding="1dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_margin="2dp"
+                    android:padding="1dp"
+                    android:id="@+id/dic_entry_info_button"
+                    android:layout_width="0dp"
+                    android:background="@android:drawable/ic_menu_info_details"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dic_entry_trans1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTrans1Spec"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.3"
+                    android:textColor="@color/lightGrey" />
+
+                <TextView
+                    android:id="@+id/tvTrans1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="23dp"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal"
+                    android:textColor="@color/lightYellow" />
+            </LinearLayout>
+            <!-- Hidden advanced word information -->
+            <LinearLayout
+                android:id="@+id/dic_entry_info1_layout"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dic_entry_info1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkdarkBlue"
+                    android:textColor="@color/lightPink" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dic_entry_trans2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTrans2Spec"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.3"
+                    android:textColor="@color/lightGrey" />
+
+                <TextView
+                    android:id="@+id/tvTrans2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="23dp"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal"
+                    android:textColor="@color/lightYellow">
+
+                </TextView>
+            </LinearLayout>
+            <!-- Hidden advanced word information -->
+            <LinearLayout
+                android:id="@+id/dic_entry_info2_layout"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dic_entry_info2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkdarkBlue"
+                    android:textColor="@color/lightPink" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dic_entry_trans3_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTrans3Spec"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.3"
+                    android:textColor="@color/lightGrey" />
+
+                <TextView
+                    android:id="@+id/tvTrans3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="23dp"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal"
+                    android:textColor="@color/lightYellow">
+
+                </TextView>
+            </LinearLayout>
+            <!-- Hidden advanced word information -->
+            <LinearLayout
+                android:id="@+id/dic_entry_info3_layout"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dic_entry_info3"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkdarkBlue"
+                    android:textColor="@color/lightPink" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

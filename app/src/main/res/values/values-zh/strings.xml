@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LibreFra</string>
+    <string name="lb_lesson_chooser_main">請選擇課程單位</string>
+    <string name="lb_lesson_search_way">找單位方式：</string>
+    <string name="btn_begin">開始了</string>
+    <string name="previous">上</string>
+    <string name="next">下</string>
+    <string name="verb">動詞</string>
+    <string name="noun">名詞</string>
+    <string name="other">其他</string>
+
+    <string name="present">Présent/現在式</string>
+    <string name="imparfait">Imparfait/未完成過去時</string>
+    <string name="simple_past">Passé Simple/簡單過去時</string>
+    <string name="futur">Futur/簡單未來時</string>
+    <string name="more_than_perfect">Plus-que-parfait/愈過時</string>
+    <string name="subjonctive">Subjonctif/從屬式</string>
+    <string name="subjontive_imparfait">Subjontif Imparfait/從屬式未完成過去時</string>
+    <string name="subjontive_present">Subjontif Présent/從屬式見在時</string>
+    <string name="imperative">Impératif/命令式</string>
+
+    <string name="menu_vocabulary">單子練習 Vocabulaire</string>
+    <string name="menu_conjugaison">動詞變化 Conjugaison</string>
+    <string name="menu_dictionary">小字典 Petit Dictionaire</string>
+    <string name="menu_reader">讀器 Assistant de Lecture</string>
+</resources>

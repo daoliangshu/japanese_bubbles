@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">LibreFra</string>
+    <string name="lb_lesson_chooser_main">Select a lesson</string>
+    <string name="lb_lesson_search_way">Search by:</string>
+    <string name="btn_begin">C\'est parti!</string>
+    <string name="menu_vocabulary">單子練習 Vocabulaire</string>
+    <string name="menu_conjugaison">動詞變化 Conjugaison</string>
+    <string name="menu_dictionary">小字典 Petit Dictionaire</string>
+    <string name="menu_multiplechoices">多選題 QCM</string>
+    <string name="menu_lesson">Leçons</string>
+    <string name="menu_settings">設定 \nConfigurations</string>
+    <string name="menu_reader">閱讀器 Assistant de Lecture</string>
+    <string name="start">開始</string>
+    <string name="lesson_chooser_way">顯示課組方法：</string>
+    <string name="lesson_chooser_way2">請選擇：</string>
+    <string name="menu_quit">離開 Quitter</string>
+    <string name="random">隨機 / Au hasard</string>
+    <string name="next">下/Suivant </string>
+    <string name="previous">上/Précédent </string>
+    <string name="verb">Verbe/動詞</string>
+    <string name="noun">Nom/名詞</string>
+    <string name="other">Autre/其他</string>
+
+    <string name="btnSpeakWord">écouter le mot</string>
+    <string name="btnSpeakAll">écouter tout</string>
+
+    <string name="expr">expr.</string>
+    <string name="adj">adj.</string>
+    <string name="pron">pron.</string>
+    <string name="prep">prép.</string>
+    <string name="proverb">prov.</string>
+    <string name="adv">adv.</string>
+
+    <string name="chooseActivity">Choisissez une activité</string>
+
+    <string name="vocab_list_chooser">請選擇一個單子集合</string>
+
+    <string name="display_word">Afficher mot en haut</string>
+    <string name="present">Présent/現在式</string>
+    <string name="imparfait">Imparfait/未完成過去時</string>
+    <string name="simple_past">Passé Simple/簡單過去時</string>
+    <string name="futur">Futur/簡單未來時</string>
+    <string name="more_than_perfect">Plus-que-parfait/愈過時</string>
+    <string name="subjonctive">Subjonctif/從屬式</string>
+    <string name="subjontive_imparfait">Subjontif Imparfait/從屬式未完成過去時</string>
+    <string name="subjontive_present">Subjontif Présent/從屬式見在時</string>
+    <string name="imperative">Impératif/命令式</string>
+    <!-- Game strings -->
+    <string name="retry">Recommencer</string>
+    <string name="game_over">Terminé</string>
+    <string name="quit">Quitter/離開</string>
+    <string name="score">Points/分數:</string>
+
+    <!-- QCM -->
+    <string name="choose_search_way">請選擇掃找方法：</string>
+    <string name="choose_sub_search_way">[a changer]</string>
+
+    <!-- Dictionnary -->
+    <string name="subst">名詞</string>
+    <string name="search">Chercher/搜尋</string>
+
+    <string name="level">Niveau/程度</string>
+    <string name="beginner">初級</string>
+    <string name="intermediate">中級</string>
+    <string name="advanced">高級</string>
+    <string name="category">Catégorie/題目</string>
+    <string name="default_lesson_thematic">無題目課程</string>
+
+    <string name="spd_rapid">快</string>
+    <string name="spd_medium">中</string>
+    <string name="spd_slow">慢</string>
+
+    <string name="set_multiplechoice_speed">多選題速度 / QCM Vitesse</string>
+    <string name="set_lettrabulle_speed">單子練習速度 / Lettrabulle Vitesse</string>
+    <string name="about">關於 / A propos</string>
+    <string name="settings_save">存檔 / Sauvegarder</string>
+
+
+</resources>
